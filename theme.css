@@ -1,0 +1,57 @@
+body{
+font-size: 0.95em;
+background-color: #fff;
+font-weight: 400;
+font-family: 'Source Sans Pro', sans-serif;
+text-rendering: optimizeLegibility;
+margin: 0;
+padding: 0;
+}
+
+::-moz-selection {color: #fff; background: #333;}
+::selection {color: #fff; background: #333;}
+
+::-webkit-scrollbar{width:5px;height:5px;}
+::-webkit-scrollbar-track{background:#222;}
+::-webkit-scrollbar-thumb{background:#666;}
+
+a{text-decoration: none;}
+p{line-height: 2; color: #666;}
+
+h1,h2,h3,h4,h5{font-weight: 400;}
+
+#header {background-color: #000;}
+#header .container {padding: 0 6%; }
+nav[role=navigation] {-webkit-transition: all .4s ease-out;-moz-transition: all .4s ease-out;-ms-transition: all .4s ease-out;-o-transition: all .4s ease-out;transition: all .4s ease-out;clear: both;}
+nav[role=navigation] li a {padding: 20px 6%;margin-bottom: 15px;display: block;background-color: #151515;color: #fff;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;}
+nav[role=navigation] ul {padding: 0;margin: 0;}
+.menu nav[role=navigation] {overflow: hidden;max-height: 0;}
+nav[role=navigation] li a:hover {background-color: #151515;color: #555;}
+nav[role=navigation].active {max-height: 386px;}
+a.activate {background-color: #333;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;padding: 10px 15px;margin: 20px 0;display: block;float: right;color: #fff;}
+a.activate:hover {background-color: #444;}
+.logo {font-size: 1.6em;letter-spacing: 1px;position: absolute;font-weight: 400;float: left;top: 24px;color: #fff; margin: 0; padding: 0;}
+.container{max-width: 1060px; margin: 0 auto;}
+.contain{max-width: 1060px; margin: 0 auto; padding: 0px 6%;}
+
+article{padding: 30px 6%; background-color: #fff; -webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;}
+img{width: 100%;}
+
+#top{padding: 120px 0px; background-color: #f8f8f8; width: 100%;}
+.banner h1{margin: 0; padding: 0; font-size: 3.5em; color: #333; font-weight: 300;}
+.banner p{margin: 0; padding: 0; font-size: 1.2em; color: #777;}
+b{font-weight: 600;}
+
+
+@media (min-width: 700px) {
+section{padding: 60px 0%;}
+.menu nav[role=navigation] {max-height: none;line-height: 0;}
+nav[role=navigation] ul {margin: 0;float: right;}
+nav[role=navigation] li {display: inline-block;padding: 25px 0;margin-right: 15px;}
+nav[role=navigation] li a {color: #fff;background-color: #222;padding: 20px 15px;border: 0;margin-bottom: 0;}
+nav[role=navigation] li a:hover {background-color: #555;color: #fff;}
+nav[role=navigation] li:last-child {margin-right: 0;}
+a.activate {display: none;}
+.logo{top: 29px;}
+
+}
